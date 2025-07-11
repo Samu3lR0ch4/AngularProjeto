@@ -9,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class Menu {
 router = Inject(Router)
-
 VaParaDashboard(){
   this.router.navigate(["/dashboard"])
+}
+VaParaHome(){
+  this.router.navigate(["/home"])
 }
 
 }

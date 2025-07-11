@@ -1,0 +1,32 @@
+ .hamburger-btn {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: green;
+      margin: 16px;
+      top: 0;
+      left: 0;
+      z-index: 1100;
+    }
+
+    nav a {
+  color: #4d4d4d;
+  font-size: 16px; 
+  font-weight: bold; 
+  text-decoration: none; 
+  margin: 10px 0; 
+}
+
+
+nav a:hover {
+  color: #007bff; 
+  background-color: #f0f0f0; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+}
+
+
+nav a.active {
+  color: #007bff; 
+  font-weight: bold; 
+}

@@ -14,7 +14,6 @@ export const routes: Routes = [
     { 
     path:"home", 
     pathMatch: "full",
-    canActivate:[loginGuard],
     loadComponent: () => {
         return import("./pages/home/home").then (C => C.Home)
         
@@ -24,9 +23,8 @@ export const routes: Routes = [
     { 
     path:"dashboard", 
     pathMatch: "full",
-    canActivate:[loginGuard],
     loadComponent: () => {
-        return import("./pages/dashboard/dashboard").then (C => C.Dashboard)
+    return import("./pages/dashboard/dashboard").then (C => C.Dashboard)
         
     }
 

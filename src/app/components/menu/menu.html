@@ -1,12 +1,19 @@
- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-  Menu
-</button>
+<button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">☰</button>
+
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/ford.png" alt="Logo" class="img-fluid" style="max-width: 100px;"></h5>
   </div>
   <div class="offcanvas-body">
-    <button class="btn btn-primary" (click)="VaParaDashboard()">Dashboard</button>
+    
+
+    <nav>
+    <div class="d-grid gap-2 col-md-6 margin-right 40px">
+      <a href="/home" class="menu-item">Home</a>
+      <a href="/dashboard" class="menu-item">Dashboard</a>
   </div>
+  </nav>
 </div>
+</div>
+  

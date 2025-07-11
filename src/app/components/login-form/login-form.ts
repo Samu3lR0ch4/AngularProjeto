@@ -28,18 +28,18 @@ if(!this.loginForm.valid || !nome || !senha){
   return
 }
 
-this.loginService.login(nome,senha).subscribe({
-  error: (e) => {
-    if(e.status === 401){
-       alert("Usuário ou senha inválidos!")
-    }
-    
-    alert("Erro interno! Tente novamente mais tarde")
+this.loginService.login(nome, senha).subscribe({
+  next: () => {
+    this.router.navigate(["/home"]);
   },
-  next: () =>{
-this.router.navigate(["/home"])
+  error: (e) => {
+    if (e.status === 401) {
+      alert("Usuário ou senha inválidos!");
+    } else {
+      alert("Erro interno! Tente novamente mais tarde");
+    }
   }
-})
+});
 
 }
 }
