@@ -12,3 +12,10 @@
   background-color: #c82333;
   transform: scale(1.05);
 }
+
+button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 25px;
+}

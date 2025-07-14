@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+
+tr, th, td{
+    border: 1px solid black;
+
+}
+th{
+    background-color: darkblue;
+}
+.rodape td{
+    background-color: darkblue;
+}

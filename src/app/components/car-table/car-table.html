@@ -1,6 +1,7 @@
-    <table class="mt-2 table">
+<div class="fixed-bottom">
+    <table class="mt-2 table-bordared table-striped table-primary text-white ">
         <thead>
-            <tr>
+            <tr >
                 <th >VIN</th >
                 <th >ODÔMETRO</th >
                 <th >NÍVEL DO COMBUSTÍVEL</th >
@@ -12,13 +13,29 @@
         <tbody>
             <tr>
                 <td>
-                <input (change)="onChangeVin($event)" type="text" placeholder="{{ vin }}" value="{{vin}}" class="w-100 m-2">
+                <input (change)="onChangeVin($event)" type="text" placeholder="{{ vin }}" value="{{vin}}" class="w-90 m-2">
                 </td>
-                <td class="p-3">{{odometro}}Km</td>
-                <td class="p-3">{{nivelCombustivel}}%</td>
-                <td class="p-3">{{status}}</td>
-                <td class="p-3">{{lat}}</td>
-                <td class="p-3">{{long}}</td>
+                <td class="table-light p-3">{{odometro}}Km</td>
+                <td class="table-light p-3">{{nivelCombustivel}}%</td>
+                <td class="table-light p-3">{{status}}</td>
+                <td class="table-light p-3">{{lat}}</td>
+                <td class="table-light p-3">{{long}}</td>
             </tr>
         </tbody>
+
+        <tbody>
+            <tr class="rodape">
+                <td>
+                </td>
+                <td class="p-3"></td>
+                <td class="p-3"></td>
+                <td class="p-3"></td>
+                <td class="p-3"></td>
+                <td class="p-3"></td>
+            </tr>
+        </tbody>
+
     </table>
+
+</div>
+
