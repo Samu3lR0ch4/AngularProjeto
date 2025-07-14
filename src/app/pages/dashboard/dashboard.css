@@ -1,0 +1,93 @@
+.hamburger-btn {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: green;
+      margin: 16px;
+      top: 0;
+      left: 0;
+      z-index: 1100;
+    }
+
+    nav a {
+  color: #4d4d4d;
+  font-size: 16px; 
+  font-weight: bold; 
+  text-decoration: none; 
+  margin: 10px 0; 
+}
+
+
+nav a:hover {
+  color: #007bff; 
+  background-color: #f0f0f0; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+}
+
+
+nav a.active {
+  color: #007bff; 
+  font-weight: bold; 
+}
+ 
+
+h1, h2, h5 {
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+    color: #004aad;
+    margin: 20px 0;
+}
+
+section{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.shadow.border {
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shadow.border h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+.shadow.border p {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.bg-cover {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bg-cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+

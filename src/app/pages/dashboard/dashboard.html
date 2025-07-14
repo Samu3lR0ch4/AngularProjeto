@@ -1,1 +1,49 @@
-<p>dashboard works!</p>
+<button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">☰</button>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/ford.png" alt="Logo" class="img-fluid" style="max-width: 100px;"></h5>
+  </div>
+  <div class="offcanvas-body">
+    
+
+    <nav>
+    <div class="d-grid gap-2 col-md-6 margin-right 40px">
+      <a href="/home" class="menu-item">Home</a>
+      <a href="/dashboard" class="menu-item">Dashboard</a>
+  </div>
+  </nav>
+</div>
+</div>
+  
+<h1 class="text-center">Dashboard FORD</h1>
+
+<section class=" d-flex gap-3 justify-around rounded-2  ">
+<div class="shadow border border-black p-3 ">
+<h2>Veiculos</h2>
+<select (change)="onChangeSelect($event)" >
+    @for(carro of veiculos; track carro.id){
+        <option value="{{carro.id}}">{{carro.vehicle}}</option>
+    }
+</select>
+</div>
+<app-card [titulo]="'Total de Vendas'" [valor]="veiculoSelecionado.volumetotal"/>
+<app-card [titulo]="'Conectados'" [valor]="veiculoSelecionado.connected"/>
+<app-card [titulo]="'Update Software'" [valor]="veiculoSelecionado.softwareUpdates" />
+</section>
+
+<section class="bg-cover d-flex justify-content-center align-items-center">
+    <img src="{{ veiculoSelecionado.img }}" alt="">
+</section>
+
+<div> 
+<app-car-table [vin]="veiculoSelecionado.vin"
+[lat]="vinInfos.lat"
+[long]="vinInfos.long"
+[nivelCombustivel]="vinInfos.nivelCombustivel"
+[odometro]="vinInfos.odometro"
+[status]="vinInfos.status"
+/>
+</div>
+
+
+

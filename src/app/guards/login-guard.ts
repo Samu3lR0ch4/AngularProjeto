@@ -11,7 +11,6 @@ export const loginGuard: CanActivateFn = (route, state) => {
   }
 
   const email = sessionStorage.getItem("email");
-
   if (!email) {
     alert("Usuário fora de autenticação!");
     router.navigate([""]);

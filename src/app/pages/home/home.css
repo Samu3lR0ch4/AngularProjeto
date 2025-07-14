@@ -1,0 +1,14 @@
+.btn-logout {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545; /* vermelho padrão bootstrap */
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
