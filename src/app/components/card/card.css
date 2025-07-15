@@ -1,1 +1,29 @@
- 
+.card-box {
+  width: 180px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-box h2 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-box .valor {
+  font-size: 28px;
+  color: #007bff; 
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-box .unidades {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}

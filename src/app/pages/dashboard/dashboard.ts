@@ -3,6 +3,7 @@ import { Card } from "../../components/card/card";
 import { CarTable } from "../../components/car-table/car-table";
 import { DashboardService } from '../../services/dashboard.service';
 import { Carro, VinInfos } from '../../models/car';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -66,4 +67,13 @@ vinInfos: VinInfos = {
   onEditVin(){
     
   }
+
+router = inject(Router)
+logout(){
+  sessionStorage.clear()
+  this.router.navigate([""])
 }
+
+}
+
+

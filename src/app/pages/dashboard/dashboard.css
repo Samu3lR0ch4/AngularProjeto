@@ -92,3 +92,10 @@ select {
 }
 
 
+.logout-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 25px;
+  z-index: 10;
+}
